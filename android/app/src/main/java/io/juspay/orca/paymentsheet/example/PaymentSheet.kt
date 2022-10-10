@@ -1,8 +1,8 @@
 package io.juspay.orca.paymentsheet.example
 
+import android.app.Activity
 import android.content.Intent
 import androidx.activity.ComponentActivity
-import com.example.rnandroiddemoapp.MyReactActivity
 
 class PaymentSheet(private val activity: ComponentActivity) {
 

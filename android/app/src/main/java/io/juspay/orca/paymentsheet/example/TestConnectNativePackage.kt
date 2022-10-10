@@ -1,6 +1,6 @@
-package com.example.rnandroiddemoapp
+package io.juspay.orca.paymentsheet.example
 
-import com.example.rnandroiddemoapp.TestConnectNativeModule
+import android.util.Log
 import com.facebook.react.ReactPackage
 import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
@@ -13,6 +13,7 @@ class TestConnectNativePackage : ReactPackage {
     }
 
     override fun createNativeModules(reactContext: ReactApplicationContext): List<NativeModule> {
+        Log.d("letitbe", this.toString())
         val modules: MutableList<NativeModule> = ArrayList()
         modules.add(TestConnectNativeModule(reactContext))
         return modules

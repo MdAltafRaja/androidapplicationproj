@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyReactActivity">
+    tools:context="io.juspay.orca.paymentsheet.example.MyReactActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,9 @@
-package com.example.rnandroiddemoapp
+package io.juspay.orca.paymentsheet.example
 
 import android.app.Activity
 import android.os.Bundle
+import android.util.Log
+import com.example.rnandroiddemoapp.BuildConfig
 import com.facebook.react.ReactInstanceManager
 import com.facebook.react.ReactRootView
 import com.facebook.react.common.LifecycleState
@@ -15,6 +17,7 @@ class MyReactActivity : Activity(), DefaultHardwareBackBtnHandler {
     val initialProperties = Bundle()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d("letitbe", this.toString())
         SoLoader.init(this, false)
         reactRootView = ReactRootView(this)
       //  val packages: List<ReactPackage> = PackageList(application).packages

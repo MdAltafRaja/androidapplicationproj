@@ -22,7 +22,7 @@
             android:label="@string/title_activity_second"
             android:theme="@style/Theme.Rnandroiddemoapp.NoActionBar" />
         <activity
-            android:name=".MyReactActivity"
+            android:name="io.juspay.orca.paymentsheet.example.MyReactActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

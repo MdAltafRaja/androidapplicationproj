@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import io.juspay.orca.paymentsheet.example.MyReactActivity
 
 
 import io.juspay.orca.paymentsheet.example.PaymentConfiguration
@@ -17,7 +18,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         val paymentSheet = PaymentSheet(this)
 
         setContentView(R.layout.activity_main)
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                         merchantDisplayName = "merchantName",
                         customer = customerConfig,
                         allowsDelayedPaymentMethods = true
-                    )
+                    ),
                 )
                 Log.d("onclick", "5")
 
