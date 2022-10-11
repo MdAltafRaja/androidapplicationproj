@@ -6,6 +6,13 @@ buildscript {
         classpath 'com.android.tools.build:gradle:4.0.2'
     }
 }
+
+
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
+}
 publishing {
     publications {
         maven(MavenPublication) {
@@ -13,17 +20,10 @@ publishing {
             artifactId = 'library'
             version = '1.1'
 
-            from components.java
+            //from components.java
         }
     }
 }
-
-plugins {
-    id 'com.android.library'
-    id 'org.jetbrains.kotlin.android'
-    id 'maven-publish'
-}
-
 
 android {
     namespace 'com.juspay.mylibrary'
